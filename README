@@ -1,0 +1,45 @@
+Proyecto de Análisis de Telecomunicaciones - ConnectaTel
+
+Objetivo
+Clasificar y segmentar clientes de ConnectaTel según su edad y nivel de uso (mensajes, llamadas y minutos), identificando patrones de comportamiento, outliers y oportunidades comerciales para mejorar la oferta de planes.
+
+Datasets utilizados
+- users_latam.csv: Información de usuarios (edad, plan, ciudad).
+- usage.csv:Registros de llamadas y mensajes por usuario.
+- plans.csv: Detalles de los planes contratados (Básico, Premium).
+
+Etapas del análisis
+1. Carga y limpieza de datos  
+   - Revisión de valores faltantes y consistencia de columnas.  
+   - Filtrado de registros del año 2024.  
+
+2. Resumen estadístico
+   - Media, mediana, mínimo, máximo y percentiles de variables numéricas.  
+   - Distribución porcentual de planes contratados.  
+
+3. Visualización de distribuciones  
+   - Histogramas de edad, mensajes, llamadas y minutos.  
+   - Boxplots para identificar outliers.  
+
+4. Identificación de outliers 
+   - Método IQR para calcular límites.  
+   - Decisión de mantener outliers superiores como heavy users.  
+
+5. Segmentación de clientes  
+   - **Por uso:** Bajo uso, Uso medio, Alto uso.  
+   - **Por edad:** Joven, Adulto, Adulto Mayor.  
+
+6. Insights ejecutivos 
+   - Segmentos más valiosos: Adultos con alto uso en plan Premium.  
+   - Oportunidades: planes intermedios para clientes de uso medio, beneficios para retención de bajo uso.  
+
+Cómo ejecutar el notebook
+1. Descarga el archivo `.ipynb` desde este repositorio.  
+2. Ábrelo en [Google Colab](https://colab.research.google.com/) o en Jupyter Notebook.  
+3. Ejecuta las celdas en orden para reproducir el análisis.  
+
+Guía de reproducción
+1. Descarga los archivos.
+2. Intala las librerias
+3. Abre el Notebook y ejecuta las celdas en orden.
+   
